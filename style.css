@@ -3,16 +3,8 @@
 TO DO: 
 
 Making Divs accessible
-Pin positioned el to center for mobile 
-
-
-### Primary
-
-- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
-
-### Neutral
-
-- Pale Blue: hsl(243, 100%, 93%)
+Positioned els pinning 
+Clip path pseduo el 
 
 */
 
@@ -39,13 +31,12 @@ body {
 
 .wrapper {
   width: 90%;
-  max-width: 900px;
+  max-width: 500px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .flex-item {
-  flex: 1 300px;
   background-color: hsl(228, 56%, 26%);
 }
 
@@ -130,15 +121,101 @@ li {
 
 .data-container__description {
   font-weight: 400;
+  color: hsl(243, 100%, 93%);
+  width: 85%;
+  margin: 1rem auto;
+  text-align: center;
 }
 
 .data-container__meter {
+  position: relative;
   height: 20px;
   width: 100%;
   background-color: rgba(12, 18, 44, 0.5);
 }
 
+.data-container__meter::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 16px;
+  width: 75%;
+  left: 3px;
+  bottom: 2px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+}
+
+.data-container__meter::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 14px;
+  width: 5%;
+  right: 79px;
+  bottom: 3px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 3px 0 white;
+}
+
 .data-container__ranges {
   display: flex;
   justify-content: space-between;
+}
+
+.icon {
+  transition: 300ms;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .wrapper {
+    max-width: 1000px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .logo-container {
+    flex-grow: 1;
+    margin: 0 2rem 0 0;
+  }
+
+  .data-container {
+    flex-grow: 10;
+  }
+
+  .data-container__description {
+    width: unset;
+    margin-block: 1rem;
+    text-align: unset;
+  }
+
+  .data-positioned-container {
+    right: -5%;
+    bottom: 65%;
+    transform: translate(-50%, -50%);
+  }
+
+  .data-positioned-container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    transform: rotate(180deg, 180deg);
+    background-color: white;
+    height: 27px;
+    width: 27px;
+    bottom: -17px;
+    right: -1px;
+    clip-path: polygon(100% 1%, 0% 100%, 100% 100%);
+  }
 }
