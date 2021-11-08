@@ -36,53 +36,45 @@ Your users should be able to:
 ### Built with
 
 -  Semantic HTML5 markup
--  CSS custom properties
 -  Flexbox
--  CSS Grid
 -  Mobile-first workflow
--  [React](https://reactjs.org/) - JS library
--  [Styled Components](https://styled-components.com/) - For styles
--  Sass - CSS preprocessor
 
 ### What I learned
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 ```css
-.proud-of-this-css {
-   color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-   console.log('🎉')
+.data-container__meter::after {
+   box-shadow: 0 0 3px 0 white;
+   /* glow effect */
 }
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Further clip path uses - same use case past two projects (with Sunnyside Agency)
+
+Further background img control - experimenting (always possible to control them - keeping important parts in focus or changing layout in mqs)
 
 ### Useful resources
 
--  [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+-  [Using CSS Clip Paths](https://teamtreehouse.com/library/css-clipping-paths) - This tutorial taught me all the basics about using clip paths, alongside some practical exampls such as creating an effect where text can blend in with background images via 'clipping' certain shapes to hide the text at specific points.
 
 ## Author
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
 -  Linkedin - [Joshua Jameson-Wallis]()
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
 ###### TODO
 
 HTML:
 
+Wrapping <img> in <a> for icons - thinking about what's interactive (with further potential purpose)
+
 CSS:
 
-JS:
+Fluid background img - fixed vs fluid values (for both size + position) | this specific SVG ok to keep growing - not all are
+
+Img icons with background/border around | flex to center within - grid + place-items: center (less code)
+
+Clip path for triangle/speech bubble effect on 'data left' pseudo element | fluid position of pseudo el - pinned to middle on mobile (translate trick) + fluid on wider (max-width on wrapper keeps all aligned)
+
+Progress bar + circle pseudo el within (fixed % horizontally so responded with parent bar + didn't become mis-aligned) | box-shadow - glow effect (re-usable for other btn styles/usecases)

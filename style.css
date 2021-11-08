@@ -177,8 +177,7 @@ li:hover {
 @media (min-width: 900px) {
    :root {
       background: hsl(229, 57%, 11%) url('/images/bg-desktop.png') no-repeat
-         /* center 100%;
-    background-size: 100%; */ bottom / 100% 52.5%;
+         bottom / 100% 52.5%;
    }
    .wrapper {
       max-width: 1000px;
