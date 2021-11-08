@@ -45,6 +45,13 @@ Your users should be able to:
 .data-container__meter::after {
    box-shadow: 0 0 3px 0 white;
    /* glow effect */
+   clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+:root {
+   background: hsl(229, 57%, 11%) url('/images/bg-desktop.png') no-repeat bottom /
+      100% 52.5%;
+   /* fluid bg-img */
 }
 ```
 
