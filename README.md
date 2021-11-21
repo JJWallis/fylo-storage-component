@@ -61,15 +61,15 @@ I decided to experiment with the icons container by controlling it via flex, so 
 
 ```css
 .data-container__meter::after {
+   height: 14px;
+   width: 14px;
+   right: 24.5%;
+   bottom: 3px;
    box-shadow: 0 0 3px 0 white;
-   /* glow effect */
-   clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
 ```
 
-fluid position of 'data left' pseudo element - pinned to middle on mobile (translate trick) + fluid on wider (max-width on wrapper keeps all aligned)
-
-Progress bar + circle pseudo el within (fixed % horizontally so responded with parent bar + didn't become mis-aligned) | box-shadow - glow effect (re-usable for other btn styles/usecases)
+The fluid and responsive positioning of the progress bar and circle pseudo element within also became a nice challenge featured in this project. I had to provide a fluid percentage value horizontally so the circle would respond with its parent bar and not become mis-aligned, whilst applying a fixed px size and box-shadow to achieve the glow effect.
 
 ### Continued development
 
