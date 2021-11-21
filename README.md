@@ -47,45 +47,41 @@ Your users should be able to:
    /* glow effect */
    clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
+```
 
+```css
 :root {
    background: hsl(229, 57%, 11%) url('/images/bg-desktop.png') no-repeat bottom /
       100% 52.5%;
-   /* fluid bg-img */
 }
 ```
 
+The background SVG for this project was at first difficult to control, since it would continue to scale either vertically or horizontally as the viewport increased. Yet while experimenting with the size of the asset, I discovered that providing a fixed vertical size in either px or at 100%, with a fluid horizontal size allowed the SVG to only scale along the x axis. In this instance it works quite nicely, but I am aware not all assets will look pleasant if they're continually stretched.
+
+```css
+.logo-container__icons-container {
+   display: flex;
+   flex-wrap: wrap;
+}
+```
+
+Img icons with background/border around | flex to account for future content (wrap) vs inline-block + vertical-align (must apply style to each new img)
+
+fluid position of 'data left' pseudo element - pinned to middle on mobile (translate trick) + fluid on wider (max-width on wrapper keeps all aligned)
+
+Progress bar + circle pseudo el within (fixed % horizontally so responded with parent bar + didn't become mis-aligned) | box-shadow - glow effect (re-usable for other btn styles/usecases)
+
 ### Continued development
 
-Further clip path uses - same use case past two projects (with Sunnyside Agency)
+Further clip path uses - same use case past two projects (with Sunnyside Agency) although seems quite specific + niche use-cases
 
-Further background img control - experimenting (always possible to control them - keeping important parts in focus or changing layout in mqs)
+Further background img control - experimenting (always possible to control them - yet when first setup can seem very difficult)
 
 ### Useful resources
 
--  [Using CSS Clip Paths](https://teamtreehouse.com/library/css-clipping-paths) - This tutorial taught me all the basics about using clip paths, alongside some practical exampls such as creating an effect where text can blend in with background images via 'clipping' certain shapes to hide the text at specific points.
+-  [Using CSS Clip Paths](https://teamtreehouse.com/library/css-clipping-paths) - This tutorial taught me all the basics about using clip paths, alongside some practical examples such as creating an effect where text can blend in with background images via 'clipping' certain shapes to hide the text at specific points.
 
 ## Author
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
 -  Linkedin - [Joshua Jameson-Wallis]()
-
-###### TODO
-
-HTML:
-
-Wrapping <img> in <a> for icons - thinking about what's interactive (with further potential purpose)
-
-CSS:
-
-Fluid background img - fixed vs fluid values (for both size + position) | this specific SVG ok to keep growing - not all are
-
-Img icons with background/border around | flex to center within - grid + place-items: center (less code)
-
-Clip path for triangle/speech bubble effect on 'data left' pseudo element | fluid position of pseudo el - pinned to middle on mobile (translate trick) + fluid on wider (max-width on wrapper keeps all aligned)
-
-Progress bar + circle pseudo el within (fixed % horizontally so responded with parent bar + didn't become mis-aligned) | box-shadow - glow effect (re-usable for other btn styles/usecases)
-
-Testing, testing, testing
-
-Testing, testing, testing
