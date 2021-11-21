@@ -73,9 +73,9 @@ The fluid and responsive positioning of the progress bar and circle pseudo eleme
 
 ### Continued development
 
-Further clip path uses - same use case past two projects (with Sunnyside Agency) although seems quite specific + niche use-cases
+I would like to continue using the clip-path property in future projects for different purposes, although I do realise those may be quite specific and niche.
 
-Further background img control - experimenting (always possible to control them - yet when first setup can seem very difficult)
+Finally I would like even more practice with controlling background images and they way they respond. This technique seems to be easy to learn, yet provides new challenges and bugs each project it is required.
 
 ### Useful resources
 
