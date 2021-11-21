@@ -42,14 +42,6 @@ Your users should be able to:
 ### What I learned
 
 ```css
-.data-container__meter::after {
-   box-shadow: 0 0 3px 0 white;
-   /* glow effect */
-   clip-path: polygon(100% 0, 0 0, 100% 100%);
-}
-```
-
-```css
 :root {
    background: hsl(229, 57%, 11%) url('/images/bg-desktop.png') no-repeat bottom /
       100% 52.5%;
@@ -65,7 +57,15 @@ The background SVG for this project was at first difficult to control, since it 
 }
 ```
 
-Img icons with background/border around | flex to account for future content (wrap) vs inline-block + vertical-align (must apply style to each new img)
+I decided to experiment with the icons container by controlling it via flex, so that when I added additional icons into the markup the layout was able to account for this in a dynamic manner. This contrasted to my previous approach where I aligned the icons via the `vertical-align` property, a style which would need to be replicated for each new icon added.
+
+```css
+.data-container__meter::after {
+   box-shadow: 0 0 3px 0 white;
+   /* glow effect */
+   clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+```
 
 fluid position of 'data left' pseudo element - pinned to middle on mobile (translate trick) + fluid on wider (max-width on wrapper keeps all aligned)
 
