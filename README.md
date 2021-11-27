@@ -48,7 +48,7 @@ Your users should be able to:
 }
 ```
 
-The background SVG for this project was at first difficult to control, since it would continue to scale either vertically or horizontally as the viewport increased. Yet while experimenting with the size of the asset, I discovered that providing a fixed vertical size in either px or at 100%, with a fluid horizontal size allowed the SVG to only scale along the x axis. In this instance it works quite nicely, but I am aware not all assets will look pleasant if they're continually stretched.
+The background SVG for this project was at first difficult to control, since it would continue to scale either vertically or horizontally as the viewport increased. Yet while experimenting with the size of the asset, I discovered that providing a fixed vertical size in either px or at 100%, with a fluid horizontal size allowed the SVG to only scale along the x axis. In this instance it works quite nicely, but I am aware not all assets will look pleasant if they're continually stretched in this manner.
 
 ```css
 .logo-container__icons-container {
@@ -57,7 +57,7 @@ The background SVG for this project was at first difficult to control, since it 
 }
 ```
 
-I decided to experiment with the icons container by controlling it via flex, so that when I added additional icons into the markup the layout was able to account for this in a dynamic manner. This contrasted to my previous approach where I aligned the icons via the `vertical-align` property, a style which would need to be replicated for each new icon added.
+I decided to experiment with the icons container by controlling it via flex, so that when I added additional icons into the markup beyond the original design, the layout was able to account for this in a dynamic manner. This contrasted to my previous approach where I aligned the icons via the `vertical-align` property, a style which would need to be replicated for each new icon added.
 
 ```css
 .data-container__meter::after {
@@ -75,7 +75,7 @@ The fluid and responsive positioning of the progress bar and circle pseudo eleme
 
 I would like to continue using the clip-path property in future projects for different purposes, although I do realise those may be quite specific and niche.
 
-Finally I would like even more practice with controlling background images and they way they respond. This technique seems to be easy to learn, yet provides new challenges and bugs each project it is required.
+Finally I would like even more practice with controlling background images and the way they respond to different viewports. This technique seems easy to learn at first, yet provides new challenges and bugs each project I use it, exactly like flexbox.
 
 ### Useful resources
 
