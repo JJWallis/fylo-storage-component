@@ -48,7 +48,7 @@ Your users should be able to:
 }
 ```
 
-The background SVG for this project was at first difficult to control, since it would continue to scale either vertically or horizontally as the viewport increased. Yet while experimenting with the size of the asset, I discovered that providing a fixed vertical size in either px or at 100%, with a fluid horizontal size allowed the SVG to only scale along the x axis. In this instance it works quite nicely, but I am aware not all assets will look pleasant if they're continually stretched in this manner.
+The background SVG for this project was at first difficult to control, since it would continue to scale either vertically or horizontally as the viewport increased. Yet while experimenting with the size of the asset, I discovered that providing a fixed height with a fluid width allowed the SVG to only scale along the x axis. In this instance it works quite nicely, but I am aware not all assets will look pleasant if they're continually stretched in this manner.
 
 ```css
 .logo-container__icons-container {
@@ -69,19 +69,19 @@ I decided to experiment with the icons container by controlling it via flex, so 
 }
 ```
 
-The fluid and responsive positioning of the progress bar and circle pseudo element within also became a nice challenge featured in this project. I had to provide a fluid percentage value horizontally so the circle would respond with its parent bar and not become mis-aligned, whilst applying a fixed px size and box-shadow to achieve the glow effect.
+The fluid and responsive positioning of the progress bar and circular pseudo element within also became a challenging feature of this project. I had to provide a fluid percentage-based horizontal position so the circle would respond with its parent bar and not become mis-aligned, whilst applying a fixed size and box-shadow to achieve the same glow effect.
 
 ### Continued development
 
-I would like to continue using the clip-path property in future projects for different purposes, although I do realise those may be quite specific and niche.
+I would like to continue using the `clip-path` property in future projects for different purposes, although I do realise those may be quite specific and niche.
 
-Finally I would like even more practice with controlling background images and the way they respond to different viewports. This technique seems easy to learn at first, yet provides new challenges and bugs each project I use it, exactly like flexbox.
+Finally, I look forward to even more practice with controlling background images and the way they respond to different viewports. This technique seems easy to learn at first, yet still provides new challenges and bugs each project I use it.
 
 ### Useful resources
 
--  [Using CSS Clip Paths](https://teamtreehouse.com/library/css-clipping-paths) - This tutorial taught me all the basics about using clip paths, alongside some practical examples such as creating an effect where text can blend in with background images via 'clipping' certain shapes to hide the text at specific points.
+-  [Using CSS Clip Paths](https://teamtreehouse.com/library/css-clipping-paths) - This tutorial taught me all the basics about using clip paths, alongside some practical examples such as creating an effect where text can blend in with background images, via 'clipping' certain shapes to hide the text at specific points.
 
 ## Author
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
--  Linkedin - [Joshua Jameson-Wallis]()
+-  Linkedin - [Joshua Jameson-Wallis](https://www.linkedin.com/in/joshua-jameson-wallis/)
