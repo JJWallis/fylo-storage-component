@@ -29,7 +29,7 @@ Your users should be able to:
 
 ### Links
 
--  Live Site URL:
+-  Live Site URL: https://fylo-storage-component-jjw.netlify.app/
 
 ## My process
 
