@@ -69,17 +69,17 @@ I decided to experiment with the icons' container by making it a flex container,
 }
 ```
 
-The fluid and responsive positioning of the progress bar and circular pseudo element within also became a challenging feature of this project. I had to provide a fluid percentage-based horizontal position so the circle would respond with its parent bar and not become mis-aligned, whilst applying a fixed size and box-shadow to achieve the same glow effect.
+The fluid and responsive positioning of the progress bar and circular pseudo element within also became a challenging feature. I had to provide a fluid percentage-based horizontal position so the circle would respond with its parent bar and not become mis-aligned, whilst applying a fixed size and box-shadow to achieve the same glow effect.
 
 ### Continued development
 
 I would like to continue using the `clip-path` property in future projects for different purposes, although I do realise those may be quite specific and niche.
 
-Finally, I look forward to even more practice with controlling background images and the way they respond to different viewports. This technique seems easy to learn at first, yet still provides new challenges and bugs each project I use it.
+I look forward to even more practice at controlling background images and the way they respond to different viewports. This technique seems easy to learn at first, yet still provides new challenges and bugs each project I use it.
 
 ### Useful resources
 
--  [Using CSS Clip Paths](https://teamtreehouse.com/library/css-clipping-paths) - This tutorial taught me all the basics about using clip paths, alongside some practical examples such as creating an effect where text can blend in with background images, via 'clipping' certain shapes to hide the text at specific points.
+-  [Using CSS Clip Paths](https://teamtreehouse.com/library/css-clipping-paths) - This tutorial taught me all the basics about using clip paths, alongside some practical examples such as creating an effect where text can blend in with background images by 'clipping' certain shapes to hide the text at specific points.
 
 ## Author
 
