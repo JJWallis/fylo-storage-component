@@ -57,7 +57,7 @@ The background SVG for this project was at first difficult to control since natu
 }
 ```
 
-I decided to experiment with the icons container by controlling it via flex, so that when I added additional icons into the markup beyond the original design, the layout was able to account for this in a dynamic manner. This contrasted to my previous approach where I aligned the icons via the `vertical-align` property, a style which would need to be replicated for each new icon added.
+I decided to experiment with the icons' container by making it a flex container, so when I added additional icons into the markup the layout would dynamically respond. This contrasted to my previous approach where I aligned the icons via the `vertical-align` property, a style which would need to be replicated for each new icon added.
 
 ```css
 .data-container__meter::after {
