@@ -48,7 +48,7 @@ Your users should be able to:
 }
 ```
 
-The background SVG for this project was at first difficult to control, since it would continue to scale either vertically or horizontally as the viewport increased. Yet while experimenting with the size of the asset, I discovered that providing a fixed height with a fluid width allowed the SVG to only scale along the x axis. In this instance it works quite nicely, but I am aware not all assets will look pleasant if they're continually stretched in this manner.
+The background SVG for this project was at first difficult to control since naturally it would continue to scale as the viewport increased. While experimenting with the size of the asset, I discovered that providing a fixed height with a fluid width allowed the SVG to only scale along the x axis. In this instance it works quite nicely, but I am aware not all assets will look pleasant if they're continually stretched in this manner.
 
 ```css
 .logo-container__icons-container {
